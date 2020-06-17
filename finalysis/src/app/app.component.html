@@ -2,22 +2,51 @@
   <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened class="example-side">
       <div class="nav-spacer">
-        <button mat-stroked-button class="nav-item cursor-hand active" color="accent">Finalysis</button>
+        <div class="cursor-hand">
+          <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg" class="profile">
+        </div>
         <div class="menu-items center">
           <div class="menu-item-content center">
             <button mat-stroked-button class="nav-item cursor-hand active" color="accent">
-              <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+              <mat-icon aria-hidden="false" aria-label="home">
+                home
+              </mat-icon>
             </button>
           </div>
-          <div class="menu-item-content center"><button mat-stroked-button class="nav-item cursor-hand" color="accent">Graphs</button></div>
-          <div class="menu-item-content center"><button mat-stroked-button class="nav-item cursor-hand" color="accent">Charts</button></div>
-          <div class="menu-item-content center"><button mat-stroked-button class="nav-item cursor-hand" color="accent">Analysis</button></div>
-          <div class="menu-item-content center"><button mat-stroked-button class="nav-item cursor-hand" color="accent">Summary</button></div>
+          <div class="menu-item-content center">
+            <button mat-stroked-button class="nav-item cursor-hand" color="accent">
+              <mat-icon aria-hidden="false" aria-label="table_chart">
+                table_chart
+              </mat-icon>
+            </button>
+          </div>
+          <div class="menu-item-content center">
+            <button mat-stroked-button class="nav-item cursor-hand" color="accent">
+              <mat-icon aria-hidden="false" aria-label="bar_chart">
+                bar_chart
+              </mat-icon>
+            </button>
+          </div>
+          <div class="menu-item-content center">
+            <button mat-stroked-button class="nav-item cursor-hand" color="accent">
+              <mat-icon aria-hidden="false" aria-label="hourglass_full">
+                hourglass_full
+              </mat-icon>
+            </button>
+          </div>
+          <div class="menu-item-content center">
+            <button mat-stroked-button class="nav-item cursor-hand" color="accent">
+              <mat-icon aria-hidden="false" aria-label="settings">
+                settings
+              </mat-icon>
+            </button>
+          </div>
         </div>
-        <div class="center"><mat-icon aria-hidden="false" aria-label="settings" class="cursor-hand">settings</mat-icon></div>
+        <div class="center"><mat-icon aria-hidden="false" aria-label="notifications" class="cursor-hand">notifications</mat-icon></div>
       </div>
     </mat-drawer>
-    <mat-drawer-content>Main content</mat-drawer-content>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
   </mat-drawer-container>
 </div>
-<router-outlet></router-outlet>
