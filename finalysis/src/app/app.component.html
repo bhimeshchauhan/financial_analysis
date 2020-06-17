@@ -1,15 +1,23 @@
 <div class="toolbar" role="banner">
-  <mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <span>Finalysis</span>
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened class="example-side">
       <div class="nav-spacer">
-        <button mat-stroked-button class="nav-item" color="accent">Table</button>
-        <button mat-stroked-button class="nav-item" color="accent">Balance Sheet</button>
-        <button mat-stroked-button class="nav-item" color="accent">Graphs</button>
-        <button mat-stroked-button class="nav-item" color="accent">Chart</button>
-        <button mat-stroked-button class="nav-item" color="accent">Feasibility Analysis</button>
+        <button mat-stroked-button class="nav-item cursor-hand active" color="accent">Finalysis</button>
+        <div class="menu-items center">
+          <div class="menu-item-content center">
+            <button mat-stroked-button class="nav-item cursor-hand active" color="accent">
+              <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+            </button>
+          </div>
+          <div class="menu-item-content center"><button mat-stroked-button class="nav-item cursor-hand" color="accent">Graphs</button></div>
+          <div class="menu-item-content center"><button mat-stroked-button class="nav-item cursor-hand" color="accent">Charts</button></div>
+          <div class="menu-item-content center"><button mat-stroked-button class="nav-item cursor-hand" color="accent">Analysis</button></div>
+          <div class="menu-item-content center"><button mat-stroked-button class="nav-item cursor-hand" color="accent">Summary</button></div>
+        </div>
+        <div class="center"><mat-icon aria-hidden="false" aria-label="settings" class="cursor-hand">settings</mat-icon></div>
       </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
+    </mat-drawer>
+    <mat-drawer-content>Main content</mat-drawer-content>
+  </mat-drawer-container>
 </div>
 <router-outlet></router-outlet>
