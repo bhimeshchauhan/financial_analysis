@@ -18,28 +18,28 @@
               </mat-icon>
             </button>
           </div>
-          <div class="menu-item-content center">
+          <div class="menu-item-content center" routerLink="/table" routerLinkActive="active" >
             <button mat-button class="nav-item cursor-hand" [disableRipple]="true">
               <mat-icon aria-hidden="false" aria-label="table_chart">
                 table_chart
               </mat-icon>
             </button>
           </div>
-          <div class="menu-item-content center">
+          <div class="menu-item-content center" routerLink="/graph" routerLinkActive="active" >
             <button mat-button class="nav-item cursor-hand" [disableRipple]="true">
               <mat-icon aria-hidden="false" aria-label="bar_chart">
                 bar_chart
               </mat-icon>
             </button>
           </div>
-          <div class="menu-item-content center">
+          <div class="menu-item-content center" routerLink="/analysis" routerLinkActive="active" >
             <button mat-button class="nav-item cursor-hand" [disableRipple]="true">
               <mat-icon aria-hidden="false" aria-label="hourglass_full">
                 hourglass_full
               </mat-icon>
             </button>
           </div>
-          <div class="menu-item-content center">
+          <div class="menu-item-content center" routerLink="/settings" routerLinkActive="active" >
             <button mat-button class="nav-item cursor-hand" [disableRipple]="true">
               <mat-icon aria-hidden="false" aria-label="settings">
                 settings
@@ -47,7 +47,9 @@
             </button>
           </div>
         </div>
-        <div class="center"><mat-icon aria-hidden="false" aria-label="notifications" class="cursor-hand">notifications</mat-icon></div>
+        <div class="center settings" routerLink="/notification" routerLinkActive="active" >
+          <mat-icon aria-hidden="false" aria-label="notifications" class="cursor-hand">notifications</mat-icon>
+        </div>
       </div>
     </mat-drawer>
     <mat-drawer-content class="content">
