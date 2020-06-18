@@ -2,53 +2,54 @@
   <mat-drawer-container class="side-nav-container">
     <mat-drawer mode="side" opened class="side-nav">
       <div class="nav-spacer">
-        <div class="cursor-hand profile-img">
+        <div class="cursor-hand profile-img menu-item">
           <img 
             routerLink="/profile" 
-            routerLinkActive="active" 
+            routerLinkActive="active"
+            matTooltip="My profile" 
             src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg" 
             class="profile"
           >
         </div>
-        <div class="menu-items center">
+        <div class="menu-items center menu-item">
           <div class="menu-item-content center" routerLink="/home" routerLinkActive="active" >
-            <button mat-button class="nav-item cursor-hand" [disableRipple]="true">
+            <button mat-button class="nav-item cursor-hand" matTooltip="Home" [disableRipple]="true">
               <mat-icon aria-hidden="false" aria-label="home">
                 home
               </mat-icon>
             </button>
           </div>
           <div class="menu-item-content center" routerLink="/table" routerLinkActive="active" >
-            <button mat-button class="nav-item cursor-hand" [disableRipple]="true">
+            <button mat-button class="nav-item cursor-hand" matTooltip="Table" [disableRipple]="true">
               <mat-icon aria-hidden="false" aria-label="table_chart">
                 table_chart
               </mat-icon>
             </button>
           </div>
           <div class="menu-item-content center" routerLink="/graph" routerLinkActive="active" >
-            <button mat-button class="nav-item cursor-hand" [disableRipple]="true">
+            <button mat-button class="nav-item cursor-hand" matTooltip="Graph" [disableRipple]="true">
               <mat-icon aria-hidden="false" aria-label="bar_chart">
                 bar_chart
               </mat-icon>
             </button>
           </div>
           <div class="menu-item-content center" routerLink="/analysis" routerLinkActive="active" >
-            <button mat-button class="nav-item cursor-hand" [disableRipple]="true">
+            <button mat-button class="nav-item cursor-hand" matTooltip="Analysis" [disableRipple]="true">
               <mat-icon aria-hidden="false" aria-label="hourglass_full">
                 hourglass_full
               </mat-icon>
             </button>
           </div>
           <div class="menu-item-content center" routerLink="/settings" routerLinkActive="active" >
-            <button mat-button class="nav-item cursor-hand" [disableRipple]="true">
+            <button mat-button class="nav-item cursor-hand" matTooltip="Settings" [disableRipple]="true">
               <mat-icon aria-hidden="false" aria-label="settings">
                 settings
               </mat-icon>
             </button>
           </div>
         </div>
-        <div class="center settings" routerLink="/notification" routerLinkActive="active" >
-          <mat-icon aria-hidden="false" aria-label="notifications" class="cursor-hand">notifications</mat-icon>
+        <div class="center settings menu-item" routerLink="/notification" routerLinkActive="active" >
+          <mat-icon aria-hidden="false" aria-label="notifications" matTooltip="Notification" class="cursor-hand">notifications</mat-icon>
         </div>
       </div>
     </mat-drawer>

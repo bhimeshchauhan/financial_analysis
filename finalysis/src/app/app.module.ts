@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     MatSidenavModule,
     NoopAnimationsModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
