@@ -11,6 +11,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ProfileModule } from 'src/modules/profile/profile.module';
+
+
 
 @NgModule({
   declarations: [
@@ -27,6 +30,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     MatSidenavModule,
     NoopAnimationsModule,
     MatTooltipModule,
+    ProfileModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

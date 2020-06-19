@@ -10,13 +10,41 @@ import { NotificationComponent } from 'src/modules/notification/components/notif
 
 
 const routes: Routes = [ 
-  { path: 'profile', component: ProfileComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'table', component: TableComponent },
-  { path: 'graph', component: GraphComponent },
-  { path: 'analysis', component: AnalysisComponent },
-  { path: 'settings', component: SettingsComponent },
-  { path: 'notification', component: NotificationComponent },
+  { 
+    path: 'profile', 
+    component: ProfileComponent,
+    data: {bg : 'profile-bg'} 
+  },
+  { 
+    path: 'home', 
+    component: HomeComponent,
+    data: {bg : 'home-bg'} 
+  },
+  { 
+    path: 'table', 
+    component: TableComponent,
+    data: {bg : 'table-bg'}  
+  },
+  { 
+    path: 'graph', 
+    component: GraphComponent,
+    data: {bg : 'graph-bg'}  
+  },
+  { 
+    path: 'analysis', 
+    component: AnalysisComponent,
+    data: {bg : 'analysis-bg'}  
+  },
+  { 
+    path: 'settings', 
+    component: SettingsComponent,
+    data: {bg : 'settings-bg'}  
+  },
+  { 
+    path: 'notification', 
+    component: NotificationComponent,
+    data: {bg : 'notifications-bg'}  
+  },
 ];
 
 @NgModule({
