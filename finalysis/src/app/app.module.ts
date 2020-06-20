@@ -12,6 +12,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileModule } from 'src/modules/profile/profile.module';
+import { HomeModule } from 'src/modules/home/home.module';
 
 
 
@@ -31,6 +32,7 @@ import { ProfileModule } from 'src/modules/profile/profile.module';
     NoopAnimationsModule,
     MatTooltipModule,
     ProfileModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

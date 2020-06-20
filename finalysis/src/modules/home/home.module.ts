@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { HomeComponent } from './components/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -11,10 +12,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [HomeComponent]
 })
-export class ProfileModule { 
+export class HomeModule { 
   showFiller = false;
 }

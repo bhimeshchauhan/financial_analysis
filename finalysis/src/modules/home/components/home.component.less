@@ -1,9 +1,52 @@
 :host {
-    .profile-container {
+    .home-container {
         width: 90%;
         height: 96%;
         margin: 1%;
         overflow: hidden;
         display: block;
+        color: #E7E7E7;
+        .home-header {
+            width: 96%;
+            height: 10%;
+            margin: 2% 2% 0% 2%;
+            background-color: #2B2F42;
+            display: flex;
+            .home-title {
+                width: 100%;
+                margin: auto 2%;
+                font-family: "Avenir Next W01", "Avenir Next", "Avenir", helvetica, arial, sans-serif;
+                font-size: 3em;
+                margin: 0;
+                font-weight: 600;
+                word-spacing: 2%;
+                padding: 0.2em;
+                margin: 0.1em 0.2em;
+                -moz-box-sizing: content-box; /* or `border-box` */
+                -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+                input {
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: 1em;
+                    box-sizing: content-box;
+                    width: 23%;
+                }
+                input[type=number]::-webkit-inner-spin-button,
+                input[type=number]::-webkit-outer-spin-button {   
+                    -webkit-appearance: none; 
+                }
+                .sub-header {
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+            .center {
+                margin: auto 2%;
+            }
+        }
+    }
+    .border-radius {
+        border-radius: 20px;
     }
 }
