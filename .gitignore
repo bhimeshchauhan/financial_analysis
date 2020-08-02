@@ -106,4 +106,4 @@ dist
 !*.secret
 
 # Credentials
-./Credentials/
+./credentials/
