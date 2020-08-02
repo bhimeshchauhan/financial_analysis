@@ -13,7 +13,7 @@ export class AppComponent {
     private router: Router, 
     private route: ActivatedRoute, 
     private renderer:Renderer2, 
-    private elref:ElementRef
+    private elref:ElementRef,
   ) {}
   ngOnInit() {
     this.router.events

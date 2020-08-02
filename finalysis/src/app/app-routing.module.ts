@@ -10,6 +10,11 @@ import { NotificationComponent } from 'src/modules/notification/components/notif
 
 
 const routes: Routes = [ 
+  {
+    path: '' , 
+    redirectTo:'/profile',
+    pathMatch:'full'
+  },
   { 
     path: 'profile', 
     component: ProfileComponent,

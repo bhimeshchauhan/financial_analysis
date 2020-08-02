@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {DemoService} from '../services/driveService/drive.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileModule } from 'src/modules/profile/profile.module';
 import { HomeModule } from 'src/modules/home/home.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -32,11 +34,13 @@ import { HomeModule } from 'src/modules/home/home.module';
     NoopAnimationsModule,
     MatTooltipModule,
     ProfileModule,
-    HomeModule
+    HomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DemoService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { 
   showFiller = false;
 }
